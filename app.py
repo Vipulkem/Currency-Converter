@@ -39,7 +39,9 @@ def format_currency(cur):
 col1, col2 = st.columns([1, 4])
 
 with col1:
-    st.write("\n")  # spacing
+    flag_display_url = f"https://flagcdn.com/48x36/{country_codes[convert_currency]}.png"
+    st.image(flag_display_url, width=48)
+    st.write("")  # spacing
 
 
 convert_currency = col2.selectbox(
@@ -52,7 +54,7 @@ convert_currency = col2.selectbox(
 flag_display_url = f"https://flagcdn.com/48x36/{country_codes[convert_currency]}.png"
 st.image(flag_display_url, width=48)
 
-if st.button("Get Exchange Rate"):
+if st.button("Get Rate"):
     url = "https://v6.exchangerate-api.com/v6/a48ca9092f5bb8045c444968/latest/USD"
     response = requests.get(url)
 
