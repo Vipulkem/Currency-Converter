@@ -36,6 +36,11 @@ def format_currency(cur):
     flag_url = f"https://flagcdn.com/24x18/{country_codes[cur]}.png"
     return f"{cur}"
 
+col1, col2 = st.columns([1, 4])
+
+with col1:
+    st.write("")  # spacing
+
 
 convert_currency = col2.selectbox(
     "Convert Currency to:",
