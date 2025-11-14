@@ -39,8 +39,7 @@ def format_currency(cur):
 col1, col2 = st.columns([1, 4])
 
 with col1:
-    flag_display_url = f"https://flagcdn.com/48x36/{country_codes[convert_currency]}.png"
-    st.image(flag_display_url, width=48)
+    Pass
     st.write("")  # spacing
 
 
