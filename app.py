@@ -39,7 +39,6 @@ def format_currency(cur):
 col1, col2 = st.columns([1, 4])
 
 with col1:
-    Pass
     st.write("")  # spacing
 
 
